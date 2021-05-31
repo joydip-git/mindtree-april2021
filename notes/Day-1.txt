@@ -23,6 +23,9 @@ var x = "joydip"
 x = 10
 x.toLocaleLowerCase()
 
+Node JS: 
+JS
+
 
 
 
