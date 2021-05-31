@@ -1,0 +1,14 @@
+Prototype based programming:
+1.
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
+2.
+https://javascript.info/prototypes
+
+Closure:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
+Callbacks, Promises and async/await:
+https://javascript.info/callbacks
+
+async:
+https://javascript.info/async
