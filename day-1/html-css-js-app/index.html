@@ -6,41 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <script>
-        console.log('hello...')
-        //variant
-        var x = 'JOYDIP'
-        console.log(typeof x)
-        x = 10
-        console.log(typeof x)
-        var name = x.toLocaleLowerCase();
+    <script src="./index.js">
 
-        console.log(name)
     </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        /* input[type='text'],
+        input[type='password'] {
+            background-color: antiquewhite;
+        } */
+        /* #txtUserName,
+        #txtPassword {
+            background-color: antiquewhite;
+        } */
+        /* .txtStyle {
+            background-color: antiquewhite;
+        } */
+    </style>
 </head>
 
 <body>
 
-    <table border="1">
-        <tr>
-            <td>UserName: &nbsp; </td>
-            <td>
-                <input type='text'>
-            </td>
-        </tr>
-        <tr>
-            <td>Pasword: &nbsp; </td>
-            <td>
-                <input type='password'>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="2">
-                <button>Submit</button>
-            </td>
-        </tr>
-    </table>
 
+    <input type="radio" id="" name="messageRadios" value="Hi">Hi</input>
+    &nbsp;&nbsp;
+    <input type="radio" id="" name="messageRadios" value="Hello">Hello</input>
+    &nbsp;&nbsp;
+    <input type="radio" id="" name="messageRadios" value="Hey">Hey</input>
+    <br>
+    <br>
+    <div style="margin-top: 50px; margin-bottom: 100px; margin-left: 200px;margin-right: 200px;">
+        <div class="table-responsive">
+            <table class="table">
+                <tr>
+                    <td>UserName: &nbsp; </td>
+                    <td>
+                        <input type='text' name="user" id='txtUserName' value="" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pasword: &nbsp; </td>
+                    <td>
+                        <input type='password' name="user" id='txtPassword' value="" class="form-control">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button class="btn btn-primary" onclick="authenticate()">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
