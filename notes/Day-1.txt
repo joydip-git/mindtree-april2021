@@ -1,0 +1,28 @@
+language
+C --> 
+
+
+program:
+programming language: c,c++, java, C#,....
+
+chrome (c++) - v8 engine (C++ mostly)
+edge -   chakra/chromium
+safari - JavaScript Core
+firefox -spidermonkey
+
+JS - dynamic compilation
+
+JS does not provide any static compiler like C, C++, etc.
+there is no compile time checking
+during the time of execution JS code will be compiled and then executed
+Tha's why JS is dynamic programming language
+NOT a strictly typed language, rather it is as loose typed language
+int x = "joydip";
+
+var x = "joydip"
+x = 10
+x.toLocaleLowerCase()
+
+
+
+
