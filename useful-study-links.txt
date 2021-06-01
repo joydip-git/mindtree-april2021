@@ -7,6 +7,7 @@ https://javascript.info/prototypes
 
 Videos:
 https://www.youtube.com/watch?v=hS_WqkyUah8 
+https://www.youtube.com/watch?v=CpmE5twq1h0
 
 
 
