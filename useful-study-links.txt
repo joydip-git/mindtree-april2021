@@ -1,8 +1,14 @@
 Prototype based programming:
+documents:
 1.
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain
 2.
 https://javascript.info/prototypes
+
+Videos:
+https://www.youtube.com/watch?v=hS_WqkyUah8 
+
+
 
 Closure:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
@@ -14,4 +20,8 @@ async:
 https://javascript.info/async
 
 Objects in JS:
+document:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
+Videos:
+https://www.youtube.com/watch?v=s0IdE51JE80
+https://www.youtube.com/watch?v=U08iJitN2ao
