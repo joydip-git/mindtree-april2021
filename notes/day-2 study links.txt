@@ -1,0 +1,15 @@
+1. what are Objects?
+2. Object charaterestics and functionalities
+3. how to create objects in JS?
+	. object literal syntax
+	. constructor function
+	. Object.create() method
+	. ES6 class keyword
+4. what is prototype object in JS?
+5. how to access prototype object of a function in JS?
+6. what is prototype chaining in JS?
+7. how to inherit in JS from one object to another? (without ES6 class and extends keyword)?
+8. what is "this" keyword?
+9. what is apply, call and bind methods in JS?
+10. what is arrow functions in JS? (ES6 new feature)
+
