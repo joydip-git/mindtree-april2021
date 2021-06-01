@@ -12,3 +12,6 @@ https://javascript.info/callbacks
 
 async:
 https://javascript.info/async
+
+Objects in JS:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects
