@@ -1,5 +1,5 @@
 1. complete the assignment given
-2. modify: use modular code (only in Node-app)
+2. modify: use modular code (only in Node-app using Common JS format)
    a. create 3 files each for employee, developer and hr (employee.js, developer.js, hr.js) and export the classes from each file
    b. create another file where only the array (blank) will be present (resposiroty.js) and export the array
    c. create another file (main/index.js) with 
@@ -40,6 +40,9 @@ b. app set up
   Node JS supports Common JS format of module (by default)
 
   3. module loader:
+
+  ECMAScript (ES)
+  JS and TS and NS
 
  
 
