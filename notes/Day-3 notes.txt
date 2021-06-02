@@ -1,0 +1,49 @@
+1. complete the assignment given
+2. modify: use modular code (only in Node-app)
+   a. create 3 files each for employee, developer and hr (employee.js, developer.js, hr.js) and export the classes from each file
+   b. create another file where only the array (blank) will be present (resposiroty.js) and export the array
+   c. create another file (main/index.js) with 
+      i. object creation code (import the classes)
+      ii. pushing the objects in that array (import the array)
+      iii. iterate through the array and display the salary of every employee with their name
+   d. run the main.js in Node
+
+3. transpiler: transpile code
+4. packages and package.json
+5. bundling the application: webpack
+   a. bundlers
+6. host our app through a server (dev server) - webpackdevserver, lite-server
+
+a. code
+b. app set up
+
+  
+  in JS there is no concept of module
+  also, browser actually do not have module concept
+  Broswer/web app <-------------- JavaScript ---------------------> Node JS
+
+  1. Module: a JS file
+
+  How to define a module and export module members from one file and import those members in another file?
+	answer: decided by a module format
+
+ 2. formats for module:
+	a. Common JS format (Node JS uses this)
+		i. exporting something from one file: module object with exports property 
+ 		ii. importing something from other file: require() method
+	b. Asynchronous Module Definition format (AMD)
+	c. Universal Module Definition format (UMD)
+	d. ES6 module format (import/export)
+	e. IIFE (Immediately Invocable Function Expression)
+
+  Node JS brought concept of module in JS 
+  Node JS supports Common JS format of module (by default)
+
+  3. module loader:
+
+ 
+
+
+
+
+  
