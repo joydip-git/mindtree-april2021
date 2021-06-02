@@ -8,7 +8,9 @@
       iii. iterate through the array and display the salary of every employee with their name
    d. run the main.js in Node
 
-3. transpiler: transpile code
+3. transpiler: transpile code 
+	a. TS and Typescript transpiler
+	b. Js and Babel transpiler
 4. packages and package.json
 5. bundling the application: webpack
    a. bundlers
@@ -88,6 +90,15 @@ Problems:
 	presets: array of certain plugins
 	@babel/preset-env: majority of ES-X new features related plugins
 	[pl1,pl2,pl3,....,pln]
+
+	const num:Number = 10;
+	const num = 10;
+
+	a. Compile type checking
+	b. Nice typification
+
+	TS code--> JS Code (old style)
+	ES6 modules --> AMD
 
 
 

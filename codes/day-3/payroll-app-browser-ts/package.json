@@ -1,0 +1,21 @@
+{
+  "name": "payroll-app-browser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "transpile": "tsc",
+    "transpile:watch": "tsc -w",
+    "load": "lite-server --baseDir=dist",
+    "concurrent": "concurrently",
+    "run:parallel": "concurrently \"npm run transpile:watch\" \"npm run load\" "
+  },
+  "keywords": [],
+  "author": "joydip",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.2.0",
+    "lite-server": "^2.6.1",
+    "typescript": "^4.3.2"
+  }
+}
