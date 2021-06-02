@@ -38,11 +38,60 @@ b. app set up
 
   Node JS brought concept of module in JS 
   Node JS supports Common JS format of module (by default)
+  Node JS has a Common JS module loader which resolves the dependencies amongst the files
 
   3. module loader:
+	a. require js
+	b. systemjs
 
   ECMAScript (ES)
   JS and TS and NS
+
+	module:
+	---------------
+	a. import (dependencies)
+	b. code
+	c. export 
+
+	Browser runtime has NO MODULE concept and no module loader
+	require js module loader does not understand CommonJS or any other format
+	require js module loader expects the modules to be in AMD module format
+
+Problems:
+	1. browser module loader (require.js) is unable to interpret the ES6/CommonJS module formats. It is expecting AMD module format code.
+        solution: convert CommonJS/ES6 code to AMD format
+	[use babel and use this plugin: @babel/plugin-transform-modules-amd]
+
+	2. not sure whether older browsers will be able to compile and execute the new styles JS code
+	solution: convert your ES6/7/... higer version code into lower version (<=ES5) [use babel and this preset: @babel/preset-env]
+
+	How to do both of the above??????
+	answer: use a transpiler to solve both the problems:
+
+	which language: TS/JS???
+	JS -- Babel transpiler
+	TS -- typescript transpiler
+
+	Babel Transpiler:
+	core package: @babel/core
+	CLI package: @babel/cli
+
+	const --> const-transformer/const-plugin --> var
+
+	let --> let-transformer/let-plugin --> var
+	[@babel/plugin-transform-block-scoping]
+
+	()=>{} --> arrow-transformer/arrow-plugin --> function(){}
+	[@babel/plugin-transform-arrow-functions]
+	..................................
+
+	presets: array of certain plugins
+	@babel/preset-env: majority of ES-X new features related plugins
+	[pl1,pl2,pl3,....,pln]
+
+
+
+        
 
  
 
