@@ -26,3 +26,10 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objec
 Videos:
 https://www.youtube.com/watch?v=s0IdE51JE80
 https://www.youtube.com/watch?v=U08iJitN2ao
+
+Modules in JS:
+1.
+https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/
+2.
+https://www.freecodecamp.org/news/javascript-modules-a-beginner-s-guide-783f7d7a5fcc/
+
