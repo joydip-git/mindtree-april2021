@@ -1,0 +1,108 @@
+MERN Stack
+
+database: product data (MongoDB)
+
+back-end app - Node JS(JS) (RESTFul APIs - Express JS):  functions
+a. read all data from database and share with front-end
+http://localhost:4000/productservice [GET]
+
+b. read a particular data from database by getting the unique product id from front-end and then share the same with front-end
+http://localhost:4000/productservice/{id} [GET]
+
+c. get new product data from front-end and push the same to the database
+http://localhost:4000/productservice (pass product data through HTTP request)[POST]
+
+d. get updated product data from front-end and update the same to the database
+http://localhost:4000/productservice (pass product data through HTTP request)[PUT]
+
+e. delete the product from database by getting the unique product id from front-end
+http://localhost:4000/productservice/{id}[DELETE]
+
+
+front-end: HTML, CSS, JS [ReactJS library]
+
+nginx, IIS, Apache Tomcat
+
+category of files:
+a. JS/TS		JS/TS modules --> bundle.js
+b. CSS/SCSS/SASS	style modules --> vendor.css
+c. HTML			HTML modules  --> index.html
+d. images		....	      
+e. text
+f. xml
+g. JSON
+
+Single Page Application - SPA
+
+http://localhost:3000/products 
+index.html (main page)
+<html>
+	<head></head>
+	<body>
+  		(content holder - outlet)
+		<div>
+			<form></form>
+		</div>
+	</body>
+</html>
+
+components:
+home.html (content page - view)
+<p> welcome to product management system </p>
+
+products.html  (content page - view)
+<table></table>
+
+addproduct.html  (content page - view)
+<form></form>
+
+I want someone (bundler)
+	a. to create bundles (JS bundle, CSS bundle etc.)
+	b. minify/compact/compress the bundles also
+	c. design template (HTML) to be linked with those bundles
+	d. before creating bundles, interact with transpiler (babel/tsc) to get JS/TS code transpiled
+	e. dependencies in the modules must be resolved and modules must be loaded during production time in the browser (for this bundler will also be responsible for loader s/w)
+	f. bundler will also create bundles for client-end framework libraries and any other third party libraries that your application is dependent on
+	
+bundlers: webpack, browserify, etc...
+
+webpack:
+packages: webpack, webpack-cli
+
+loaders:
+	a. babel-loader/ts-loader
+	b. html-loader
+	c. css-loader
+	d. style-loader
+	e. file-loader
+	f. xml-loader
+	etc.....
+
+plugins:
+	html-webpack-plugin
+
+npm i webpack webpack-cli ts-loader html-loader css-loader style-loader html-webpack-plugin --save-dev
+
+.\node_modules\.bin\webpack --config webpack.config.js <-- you are running this script
+
+>node .\node_modules\webpack\bin\webpack.js --config webpack.config.js<--behind the scene the script is running this JS file
+
+webpack.config.js file must contain configuration code
+the configuration should be represented through a JS object
+
+const configObject = {
+}
+
+and must export this JS object
+
+module.exports = configObject
+
+so that the "webpack.js" file can import this configuration
+
+
+	
+
+
+
+
+
