@@ -1,0 +1,15 @@
+create a product management system
+	product data: name, code, price, rating, imagepath
+	a. create an interface to represent the product model
+	b. create an array of products (blank)
+	c. ctreate manager to display all the products
+	d. create main file
+
+install all necessary packages:
+	tyepscript
+	webpack,webpac-cli
+	ts-loader, css-loader, style-loader, html-loader
+	webpack-dev-server
+	html-webpack-plugin, clean-webpack-plugin
+
+write scripts in package.json
