@@ -17,6 +17,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
 Callbacks, Promises and async/await:
 https://javascript.info/callbacks
 
+
 async:
 https://javascript.info/async
 
@@ -32,4 +33,16 @@ Modules in JS:
 https://www.jvandemo.com/a-10-minute-primer-to-javascript-modules-module-formats-module-loaders-and-module-bundlers/
 2.
 https://www.freecodecamp.org/news/javascript-modules-a-beginner-s-guide-783f7d7a5fcc/
+
+callback, promise and async/await:
+https://nodejs.dev/learn/javascript-asynchronous-programming-and-callbacks
+https://nodejs.dev/learn/understanding-javascript-promises
+https://nodejs.dev/learn/modern-asynchronous-javascript-with-async-and-await
+
+Internals of JS:
+1.
+https://medium.com/@happymishra66/execution-context-in-javascript-319dd72e8e2c#:~:text=Execution%20context%20in%20JavaScript%20is%20of%20three%20types,...%203%20Eval%3A%20Execution%20context%20inside%20eval%20function.
+2.
+[execution context, scope, closure, variable and function hoisting]
+https://codeburst.io/javascript-demystified-variable-hoisting-c3c4d2e8fd40
 
