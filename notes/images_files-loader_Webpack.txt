@@ -1,0 +1,22 @@
+1. create module file for jpg, png etc. type files and write the sample code in that file:
+declare module '*.png' {
+    const value: string
+    export default value
+}
+declare module '*.jpg' {
+    const value: string
+    export default value
+}
+
+2. 
+now in code import the image files as
+import img from './images/dell.png'
+
+additional steps(optional):
+set this in compilerOptions in tsconfig.json file:
+"moduleResolution": "Node"
+also add this part in the tsconfig.json file:
+"include": [ "import-images.d.ts" ] along with excludes
+
+
+        

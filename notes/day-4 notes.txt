@@ -27,7 +27,7 @@ category of files:
 a. JS/TS		JS/TS modules --> bundle.js
 b. CSS/SCSS/SASS	style modules --> vendor.css
 c. HTML			HTML modules  --> index.html
-d. images		....	      
+d. images		image module --> file-loader      
 e. text
 f. xml
 g. JSON
