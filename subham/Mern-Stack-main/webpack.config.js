@@ -1,4 +1,4 @@
-  
+
 const { resolve } = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -48,7 +48,7 @@ const configObject = {
     ],
     devtool: 'inline-source-map',
     devServer: {
-        port: 4000,
+        port: 4100,
         contentBase: resolve(__dirname, 'dist')
     }
 }
