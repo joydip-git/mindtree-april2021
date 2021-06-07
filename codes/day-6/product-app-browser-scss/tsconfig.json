@@ -1,0 +1,21 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "module": "AMD",
+        "target": "ES5",
+        "outDir": "dist",
+        "rootDir": "source",
+        "sourceMap": true,
+        "moduleResolution": "Node",
+        "lib": [
+            "ES6",
+            "DOM"
+        ]
+    },
+    "exclude": [
+        "./node_modules"
+    ]
+    // "include": [
+    //     "./import-images.d.ts"
+    // ]
+}

@@ -1,5 +1,5 @@
 import { addProduct, showProducts } from "./manager/productManager";
-import './styles.css'
+// import './styles.scss'
 
 import dellImg from './images/dell.png'
 import onePlusImg from './images/oneplus_mobile.jpeg'
