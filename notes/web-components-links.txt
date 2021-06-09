@@ -1,0 +1,5 @@
+how to pass data from one component to another:
+1. 
+https://itnext.io/handling-data-with-web-components-9e7e4a452e6e
+2. 
+https://stackoverflow.com/questions/50404970/web-components-pass-data-to-and-from
