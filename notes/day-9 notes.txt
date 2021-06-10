@@ -1,0 +1,15 @@
+1. constructor: 
+one time affair
+called when object is created
+DO NOT WRITE any data fetching code (Asynchrnous) from database, making network request, reading data from file (Asynchrnous)..
+
+just for creation of the object, creating a shadow dom (root), appending the template inthe shadow dom, initialize class/element proeprties with default values
+
+Note: until and unless the element is connected to the DOM through shadow dom, do not try to manipulate the template
+
+2. connectedCallback (connected)
+	might get fired multiple times also during the life-cycle of a web component
+
+3. disconnectedCallback (disconnected)
+
+4. attributeChangedCallback (attributeChanged)

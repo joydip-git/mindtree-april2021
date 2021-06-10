@@ -3,3 +3,9 @@ how to pass data from one component to another:
 https://itnext.io/handling-data-with-web-components-9e7e4a452e6e
 2. 
 https://stackoverflow.com/questions/50404970/web-components-pass-data-to-and-from
+
+lifecycle-hooks-in-web-components
+https://ultimatecourses.com/blog/lifecycle-hooks-in-web-components
+
+web-components flaws
+https://www.thinktecture.com/en/web-components/flaws/
