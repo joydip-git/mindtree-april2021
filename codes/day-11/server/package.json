@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "json-server": "^0.16.3"
+  },
+  "scripts": {
+    "data-server": "json-server --watch data.json --port 4000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
