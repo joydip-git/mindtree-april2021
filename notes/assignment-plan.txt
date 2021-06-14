@@ -1,0 +1,32 @@
+ES6/7: payroll-app
+
+product-management-system (incremental application)
+	a. bundling and transpilation:
+	 (webpack to bundle, transpilers - [babel-JS/tsc-TS])
+	b. SCSS
+	c. SASS
+	d. create using WebComponent
+		product-records element: fetch product records from an array
+		product-row: pass one product record to and display the single product record through 		this element
+	e. instead of an array which is currently storing data in your application, create a JSON file (Save it outside this application directory) and store products data and host it by JSON-SERVER and fetch data from that JSON-SERVER using 
+		i.  AJAX
+		ii. fetch() API 
+	for use in your application
+        [JSON and XML format, fetch data using AJAX and fetch() API from an XML and a JSON file]
+
+Node JS and MongoDB:
+	a. create a database and a collection (table) in MongoDB to store product records which is currently present in JSON file
+	b. currently your data present in JSON file is being hosted by JSON-SERVER. Create a Node JS RESTFul API application, which will host the products data
+	c. you already created a database and collection to store product records. Use the RESTful Node JS API application to interact with MongoDB database to fetch product records which will be supplied to the front-end application.
+
+React:
+	a. create product-management-system using React JS
+	b. the product records saved in MongoDB database collection will be supplied to the ReactJS application by Node JS RESTFul API application 
+	
+
+	
+1. do this product-management-system without any webpack etc., just using an HTML file and a JS file
+3. stenciljs and 
+4. polymerjs
+
+
