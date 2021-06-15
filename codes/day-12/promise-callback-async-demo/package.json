@@ -1,0 +1,15 @@
+{
+  "name": "promise-callback-async-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "callback.js",
+  "scripts": {
+    "devserver": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

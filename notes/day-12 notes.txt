@@ -1,0 +1,10 @@
+JS is single threaded
+thread: an execution context of a function
+
+how to achieve asynchronity in JS:
+either browser or Node Js runtime will provide asynchronity to JS
+
+so in JS you have to use any of the following:
+a. using callback
+b. using Promise
+c. using async/await
