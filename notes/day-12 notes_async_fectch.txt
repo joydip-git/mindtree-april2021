@@ -1,0 +1,21 @@
+const deleteProduct= (id)=>{
+	const req = new XMLHttpRequest()
+	.....
+	req.open('DELETE',`http://localhost:4000/${id}`,true)
+	req.send()
+	
+}
+
+deleteProduct(1)
+
+const deleteProduct=async (id)=> {  
+        
+        return await fetch(`http://localhost:4000/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-type': 'application/json'
+            }
+        });
+    }
+
+deleteProduct(1).then(....)
