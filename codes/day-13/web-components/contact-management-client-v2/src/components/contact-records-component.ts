@@ -4,6 +4,8 @@ import { ContactRowComponent } from "./contact-row-component";
 
 const contactRecordsTemplate = document.createElement('template')
 contactRecordsTemplate.innerHTML = `
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 <table>
     <thead>
         <tr>
@@ -30,14 +32,20 @@ export class ContactRecordsComponent extends HTMLElement {
         this.contactSvcRef.getContacts(this.showData)
     }
     showData = (contacts: Contact[], error: Error) => {
+        //let contactRecordsDesign = '';
         if (error !== null) {
             console.log(error)
         }
         if (contacts !== null)
             contacts.forEach(c => {
+
                 const contactRow = new ContactRowComponent();
-                contactRow.Contact = c;
+                //contactRow.Contact = JSON.stringify(c);
+                contactRow.setAttribute('Contact', JSON.stringify(c))
                 this.shadowRoot.querySelector('tbody').appendChild(contactRow)
+                //contactRecordsDesign += `<contact-row Contact ='${JSON.stringify(c)}'></contact-row>`
             })
+        //this.shadowRoot.querySelector('tbody').innerHTML = contactRecordsDesign
+        //console.log(object)
     }
 }

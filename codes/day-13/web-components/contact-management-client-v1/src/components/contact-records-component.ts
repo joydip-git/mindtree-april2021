@@ -4,8 +4,11 @@ import { ContactRowComponent } from "./contact-row-component";
 
 const contactRecordsTemplate = document.createElement('template')
 contactRecordsTemplate.innerHTML = `
-<table>
-    <thead>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<div class='table-responsive'>
+<table class='table'>
+    <thead style='background-color:burlywood'>
         <tr>
             <th>Image</th>
             <th>Name</th>
@@ -35,9 +38,12 @@ export class ContactRecordsComponent extends HTMLElement {
         }
         if (contacts !== null)
             contacts.forEach(c => {
+
                 const contactRow = new ContactRowComponent();
+
                 contactRow.Contact = c;
-                this.shadowRoot.querySelector('tbody').appendChild(contactRow)
+
+                this.shadowRoot.querySelector('tbody').appendChild(contactRow.render())
             })
     }
 }
