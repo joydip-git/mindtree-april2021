@@ -1,7 +1,7 @@
 import { Contact } from "../models/contact.model";
 import { ContactService } from "../services/contactservice"
 import { ContactDetailComponent } from "./contact-detail-component";
-import { ContactRowComponent } from "./contact-row-component";
+//import { ContactRowComponent } from "./contact-row-component";
 
 const contactRecordsTemplate = document.createElement('template')
 contactRecordsTemplate.innerHTML = `
@@ -47,8 +47,8 @@ export class ContactRecordsComponent extends HTMLElement {
                 // this.shadowRoot.querySelector('tbody').appendChild(contactRow)
                 const contactDetail = new ContactDetailComponent()
                 contactDetail.Contact = c;
-                let contactTemplate = contactDetail.render()
-                this.shadowRoot.querySelector('tbody').appendChild(contactTemplate)
+                let contactRowDesign = contactDetail.render()
+                this.shadowRoot.querySelector('tbody').appendChild(contactRowDesign)
             })
     }
 }

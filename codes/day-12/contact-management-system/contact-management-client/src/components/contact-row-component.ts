@@ -10,7 +10,6 @@ contactTemplate.innerHTML = `
     <td id='tdEmail'></td>
     <td id='tdPhone'></td>
 </tr>
-<br/>
 `
 export class ContactRowComponent extends HTMLElement {
     private contact: Contact;
