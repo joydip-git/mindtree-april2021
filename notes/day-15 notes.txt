@@ -1,0 +1,46 @@
+Design patterns:
+	
+1. reuse a certain code
+
+code:
+class Employee{
+	name:string;
+	id:number;
+	salary:number;
+	constructor(id:number, name:string;salart:number){
+		this.name = name;
+		this.id = id;
+		this.salary = salary;
+	}
+}
+class Developer extends Employee{
+	
+	project:string;
+	constructor(id:number, name:string;salart:number,project:string){
+		super(id,name,salary)
+		this.project = project;
+	}
+}
+class Hr{
+	level:string;
+	constructor(id:number, name:string;salary:number,level:string){
+		super(id,name,salary)
+		this.level = level
+	}
+}
+
+problem: repeatative (3 member declaration and some constructor code - member initialization)
+target: write those repeatative code once and resuse them as part of the Develeoper and Hr
+solution: Inheritance concept
+
+JS runtime creates a prototype object is for every function
+so that when by calling that function (using new keyword) you create a new object, automatiaccly that new object will be linked to the prototype object of the function
+hence these new objects will be able to use any functionality present in the prototype object
+this is how JS object-object inheritance works
+this creates a prototype chain
+
+
+
+
+
+
