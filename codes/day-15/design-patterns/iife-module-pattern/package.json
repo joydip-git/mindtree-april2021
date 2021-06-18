@@ -1,0 +1,15 @@
+{
+  "name": "iife-module-pattern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "module-pattern.js",
+  "scripts": {
+    "devserver": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
