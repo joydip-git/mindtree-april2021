@@ -1,0 +1,162 @@
+SPA:
+	Single HTML page with proper HTML 
+	Rest of the designs are partial
+	Each design will be accompanied by JS code
+	Component: Design (partial HTML content) + Code (data and any event handlers for the corresponding UI/design)
+	We gather all the components and decide to build the entire application which will be displayed in HTML page
+
+class Sample extnds Component{
+
+	state={
+		x:20
+	}
+
+	callMe=()=>{
+		//alert('hello')
+		this.setState({x:this.state.x+1})
+	}
+	render(){
+		/*
+		//JSX (JavaScript XML) - pseudo HTML
+		return (
+			<div>
+				<button id='btnClick' onClick={()=>callMe()}>
+					Click
+				</button>
+				<p id='dataPara'>
+					{x}
+				</p>
+			</div>
+		)
+		*/
+		
+		//the design variable stores a ReactElement (JSX) Object
+		//based on this ReactElement an HTML element will be created later
+		const btnDesign = React.createElement(
+				'button',
+				{	id:'btnClick',	
+					style:{ {'width':50px,'height':50px} }
+					onClick:{()=>callMe()
+				},
+				'Click');
+		const paraDesign = React.createElement(
+				'p',
+				{
+					id:'dataPara'
+				},
+				x);
+		const compDesign = React.createElement(
+				'div',
+				{
+					id:'mainDiv'
+				}, 
+				[ btnDesign, paraDesign ]);
+		return compDesign;
+	}
+}
+
+React JS:
+	NOT a framework, rather React JS is a library
+	helps you to create -
+	a. SPA
+	b. client-side application
+	d. component-based application
+	e. application using VDOM (main USP)
+	f. application which provides you faster performance compared to any other framework/library
+
+VDOM:
+	React JS helps you to build a Document Object Model of it's own
+	Means: when you design in React, ultimately you create series of React Elements (NOT HTML elements). The tree of those React Elements, which forms the application design, is known as React Virtual DOM.
+	React VDOM is re-created everytime there is a change in any component's state data (which recalls render() method to recreate the design with updated data)
+	Actual DOM is created only once, when the very first time Raact application starts running. Afterwards, every time VDOM is recreated React updates the Actual DOM.
+	This type of operation makes React faster. Since updating actual DOM or manipulating Actual DOM directly is a time consuming operation. whereas updating through VDOM is much faster.
+	Easire for testing React JS application
+
+reactjs: 2013
+reactjs.org
+react js current version: 17.0.2 (22/03/2021)
+
+How to create react-application?
+	a. with tool (create-react-app)
+		1. install create-react-app tool globally (npm i create-react-app -g)
+		   then create your react application: >create-react-app <app-name>
+	        2. or run the package runner (npx create-react-app <app-name>)
+		3. create typescript react application:
+			>create-react-app <app-name> --template typescript
+	b. without tool 
+		1. create a directory
+		2. create a package.json file
+		3. install react library packages: react, react-dom (As permanent/complete dependency)
+		4. create a 'src' folder to store the application's source code
+		5. create a 'public' folder to store HTML file (the single page)
+		6. create your components in different files
+		7. create a root component (preferrable name is: App) in a file
+		8. create a index/main file where you write the code of createing partial actual DOM based on the complete app design in React (VDOM) and push that deisgn in the index.html page
+		9. Now, you need
+			a. transpile your ES6 code into ES5 or lesser version of code
+			b. convert your ES6 modules in AMD module (understandable by browser)
+			c. transpile your JSX code back to (older version: <=es5) of JS code
+		   so, install a transpiler:
+		   Babel (if you write code in JS) or TSC (if you write code in TypeScript)
+		   a. install babel cli, babel core (@babel/cli, @babel/core)
+		   b. install
+			1. for (a): babel preset for ES6 (@babel/preset-env)
+			2. for (b): babel plugin for ES6 to AMD module conversion (@babel/plugin-transform-modules-amd)
+			3. for (c): babel preset for react js JSX code conversion (@babel/preset-react)
+		   c. create .babelrc file and configure those presets and plugins
+		10. install bundler (webpack)
+			a. install webpack and webpack cli (webpack, webpack-cli)
+			b. install loaders (html-loader, css-loader, style-loader, sass-loader, babel-loader, file-loader etc.)
+			c. install plugins: html-webpack-plugin, clean-webpack-plugin etc.
+		11. install a development server (webpack-dev-server)
+		12. create a webpack.config.js file with webpack configuration
+		13. create some scripts in package.json file to create development/production bundle, run dev server etc.
+		14. run your application
+		   
+
+How to create a component in React JS?
+	a. class component (stateful component)
+	b. functional component (stateless/presentational component)
+
+State:
+	a. property of Component class inherited in your component
+	b. An object must be assigmed to 'state' property of any component and in that object any value can be saved with a key/property name
+	c. State is internal to a component
+	d. No one else apart from that component has access to it and manipulate it
+	e. two ways to use:
+	a. 
+	class Sample extends Component{
+		constructor(){
+			super()
+			this.state={}
+		}
+	}
+	b. latest way
+	class Sample extends Component{
+		state ={
+		}
+	}
+Update state:
+	Do not update/mutate state manually. Rather mutate the state immutably.
+	always use setState() method
+	to setState method you have to pass an object always which represents the new state
+	or 
+	you can pass a callback method which be called by setState(). the callback must return a new object representing the new state. the callback method receives the copy of the current state from setState() method. you can use the current state to calculate the value in new state
+
+	setState() always merges the new state with the old state. if any property is not updated through new state, the old state property is not disturbed and made part of the new state.
+	setState() updates the state object asynchronously and once done, the setState() recalls the render method to create a new VDOM with updated data which will ultimately update the Actual HTML DOM in the browser
+
+	If you update state manually:
+	a. the state updation which is done asynchronously might not reflect the change in the state immediately
+	b. it will never be possible to recall the render() method [without setState()]
+
+How to pass data from parent to child component:
+	answer: through attribute
+How to pass method from parent to child component:
+	answer: through attribute
+
+How to pass data from child to parent component:
+through event (by calling parent component method, that has been passed down the child from the parent,  and passing the value as argument)
+		
+		
+	

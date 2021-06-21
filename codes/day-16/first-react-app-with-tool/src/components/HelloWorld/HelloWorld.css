@@ -1,0 +1,13 @@
+.helloWorldStyle {
+    border: 1px solid red;
+    border-radius: 3px;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    font-family: sans-serif;
+    font-size: 150%;
+    background-color: greenyellow;
+    color: grey;
+    text-align: center;
+    margin: 15px;
+}
