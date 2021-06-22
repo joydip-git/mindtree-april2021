@@ -1,0 +1,36 @@
+Part-1:
+1. what is SPA?
+2. What is React JS?
+3. What are the characterestics of React JS?
+4. What are the advantages and disadvantages of React JS?
+5. What is React Native?
+6. What are the differences between Angular, Vue and React JS?
+7. Why React JS is a library, not a framework?
+
+Part-2:
+8. How to create react js application without a tool?
+9. How to create react js application with the help of 'creat-react-app' tool using JavaScript as language?
+10. How to create react js application with the help of 'creat-react-app' tool using TypeScript as language?
+
+Part-3:
+11. What are the different types of components in React JS?
+12. How to create a React JS component?
+13. What is JSX?
+14. How to create a component design with JSX?
+15. How to create a component design without JSX, by using React.createElement() method and nest the elements?
+
+Part-4:
+16. How to pass values to a nested or child React component from a parent React component?
+17. How to pass function(s) to a nested or child React component from a parent React component?
+18. How to define type for properties (attributes) of a component and validate the properties in JavaScript and TypeScript?
+19. How to pass data from child/nested component back to the parent component?
+20. what is State of a component?
+21. what are the rules of state property of a component?
+22. how to update a state of a component using setState() method?
+
+Part-5:
+23. How to provide styles to a react element?
+	a. inline styling of react element
+	b. creating separate style object and assigning to style property of react element
+	c. how to CSS file and import the styles
+	d. how to use third-party CSS (such as bootstrap) in React JS application?
