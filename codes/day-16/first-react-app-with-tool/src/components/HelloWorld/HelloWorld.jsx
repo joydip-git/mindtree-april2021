@@ -1,5 +1,6 @@
 import './HelloWorld.css'
 import React from 'react'
+import PropTypes from "prop-types";
 
 /**
  * {
@@ -9,7 +10,7 @@ import React from 'react'
  * }
 */
 // export const HelloWorld = (props) => {
-export const HelloWorld = ({ someMessage, name, age }) => {
+const HelloWorld = ({ someMessage, name, age }) => {
     console.log('hello world rendered')
     //return <div className='helloWorldStyle'>Hello World</div>
     // const { someMessage: message, name: personName, age: personAge } = props;
@@ -38,3 +39,11 @@ export const HelloWorld = ({ someMessage, name, age }) => {
         </div>
     )
 }
+HelloWorld.propTypes = {
+    someMessage: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    age: PropTypes.number.isRequired,
+    fn: PropTypes.func,
+    person: PropTypes.object
+}
+export default HelloWorld

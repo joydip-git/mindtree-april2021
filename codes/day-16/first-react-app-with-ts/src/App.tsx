@@ -52,7 +52,9 @@ class App extends Component {
         {/* <button onClick={this.changeValue}>Increment</button> */}
         <br />
         {/** const valueComp = Value({val: this.state.val, changeHandler:this.changeValue}) */}
-        <Value val={this.state.val} changeHandler={this.changeValue} />
+        <Value val={this.state.val} changeHandler={this.changeValue} person={{ name: "anil", id: 1, salary: 1000 }} />
+        <br />
+        {/* <Value value={this.state.val} changeHandler1={this.changeValue} /> */}
       </div>
     );
   }
@@ -62,6 +64,6 @@ export default App;
 /**
  * {
  *  val:10,
- *  changeHandler={this.changeValue}
+ *  changeHandler:{this.changeValue}
  * }
  */

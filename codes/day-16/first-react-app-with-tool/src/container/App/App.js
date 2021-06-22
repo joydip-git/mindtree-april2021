@@ -1,6 +1,6 @@
 import './App.css';
 import HelloReact from '../../components/HelloReact/HelloReact'
-import { HelloWorld } from "../../components/HelloWorld/HelloWorld";
+import HelloWorld from "../../components/HelloWorld/HelloWorld";
 import { Component } from 'react';
 
 // function App() {
@@ -58,7 +58,7 @@ class App extends Component {
         <br />
         <HelloReact value={this.state.num} />
         <br />
-        <HelloWorld someMessage={this.state.message} age={40} name='Joydip' />
+        <HelloWorld someMessage={this.state.message} age={40} name='Joydip' person={{ name: 'joy', id: 1, salary: 2000 }} />
       </div>
     );
   }
