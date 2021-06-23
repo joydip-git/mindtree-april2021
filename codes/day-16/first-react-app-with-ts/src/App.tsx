@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Value from './Value'
+import Name from './Name'
 
 type stateType = {
   val: number,
@@ -55,6 +56,17 @@ class App extends Component {
         <Value val={this.state.val} changeHandler={this.changeValue} person={{ name: "anil", id: 1, salary: 1000 }} />
         <br />
         {/* <Value value={this.state.val} changeHandler1={this.changeValue} /> */}
+        <br />
+        <br />
+        {
+          /**
+           * const nameComp = new Name({
+           * nameValue:this.state.name
+           * })
+           * nameComp.render()
+           */
+        }
+        <Name nameValue={this.state.name} />
       </div>
     );
   }
