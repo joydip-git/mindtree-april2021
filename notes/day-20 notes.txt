@@ -1,0 +1,79 @@
+1. class and functional components
+2. list and map
+3. lifecycle
+
+class and functional components
+
+Functional Component: 
+a. entire function is equivalent to render() method of class component, no question of object of component here
+b. you can't have state
+c. You can't have any lifecycle methods
+const Value=(props)=>{
+	let data=10; //data will be reset everytime when the component function is called
+	return <p>{data++}</p><br/><p>{props.val}</p>
+}
+
+Class Component:
+a. an object of class component is created first and then render method is called to create the Virtual DOM part
+b. you can have state
+c. You can have any lifecycle methods
+class Component{
+	constructor(props){
+		this.props = props
+		this.state = null
+	}
+}
+class Parent extends Component{
+	/*
+	constructor(props){
+		super(props)
+		this.state={
+			data:10
+		}
+		clg(this.props.val)
+	}
+	constructor(){
+		super()
+		this.state={
+			data:10
+		}
+		clg(this.props.val)
+	}
+	*/
+	state={data:10} //state will preserve the last state of the data
+}
+
+functional App(){
+	const valueTemplate = Value({val:1})
+	const parentComp = new Parent({val:2})
+	const parentTemplate = parentComp.render()
+	
+	return (
+		<div>
+			{/*
+				<Value val={1}/>
+				<Parent val={2}/>
+			*/}
+			{
+				valueTemplate				
+			}
+			{
+				parentTemnplate
+			}
+		</div>
+	)	
+}
+
+order
+customer
+product
+payment 
+etc....
+
+
+Value: display some value which is subject to change
+Name: display a name which is subject to change
+
+uplifting the state
+
+

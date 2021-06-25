@@ -1,14 +1,16 @@
-deepthi-25
-dipankar-21
-sai-25
-kashyap-21
-mounika-20
-kushal-21
-kiran-23
-madhu-19
-mohan-24
-hari-19
-raja-17
-saad-16
-shubham-22
-spandana-18
+status:
+deepthi: 23 completed
+dipankar: 22
+priya: pure components
+kashyap: 23
+mounika: 22
+kushal: 21
+kiran: fragments (25)
+madhu:21 (forms)
+mohan: 24
+hari: 20
+lakshmi: 21
+raja: 14
+saad: fragments (25)
+shubham: 24
+spandana: 21
