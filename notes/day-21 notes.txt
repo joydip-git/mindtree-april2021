@@ -1,0 +1,90 @@
+component lifecycle:
+
+a. creation and mounting phase
+	A. Constructor:
+	1. constructor gets invoked and only once during the lifetime of a component object
+	2. if an argument has been provided in the constructor function, then the property object will be passed to that argument and this will be passed to the parent constructor function (Component), where 'props' property of the component will be set
+	3. DONT: 
+		i. make any HTTP request, 
+		ii. network request, 
+		iii. file access here
+		iv. no asynchronous request
+		v. call setState() method here
+	4. DO: 
+		i. just to assign any other property of the class or 
+		ii. assign state property of the class with default values or 
+		iii. bind functions to the class object
+	B. static getDerivedStateFromProps(newProps, initialState)
+		{ return {[propName]:newProps.propName + initialState.propName}   }
+	   this must return a new state object always
+	
+	C. render(): 
+		1. will be called everytime: first time after the constructor, because state and props gets initialized for the very first time and next time onwards whenever again the state of this component gets updated or the component receives property values from parent or any other component
+		2. returns VDOM (the component template)
+		3. DONT: 
+		i. make any HTTP request, 
+		ii. network request, 
+		iii. file access here
+		iv. no asynchronous request
+		v. call setState() method here
+		** if you are doing all the above at all, then that should be done for any event (button click etc.)
+		4. DO:
+		i. create the template
+		ii. bind the state or prop data in the template
+		iii. conditionally (as a result of any event invocation) setState() of the component
+
+	D. componentDidMount():
+		1. will be called one time only
+		2. called when the VDOM gets translated to HTML element tree and pushed into Actual DOM
+		3. DO:
+		i. make any HTTP request, 
+		ii. network request, 
+		iii. file access here
+		iv. asynchronous request
+		v. call setState() method here
+
+		
+	
+b. update phase
+	1. getDerivedStateFromProps=>state object
+		DONT
+		i. make any HTTP request, 
+		ii. network request, 
+		iii. file access here
+		iv. no asynchronous request
+		v. call setState() method here
+
+	2. shouldComponentUpdate(newProps,newstate)=>returns boolean
+		A. DONT: 
+		i. make any HTTP request, 
+		ii. network request, 
+		iii. file access here
+		iv. no asynchronous request
+		v. call setState() method here
+		B. DO: write logic to stop unnecessary rendering
+
+	3. render()=>React Element
+	4. getSnapshotBeforeUpdate(oldProps, oldState)=> an object containing recalculated scrollbar or mouse position before the component UI gets updated
+	   return { xPos:oldState.xpos+ }
+		DONT:
+		i. make any HTTP request, 
+		ii. network request, 
+		iii. file access here
+		iv. no asynchronous request
+		v. call setState() method here
+
+	5. componentDidUpdate(oldProps,oldState,snapshotObj)=> void
+		DO:
+		i. make any HTTP request, 
+		ii. network request, 
+		iii. file access here
+		iv. asynchronous request
+		v. call setState() method here
+		** write logic to stop unnecessary fetching data and setting the state and causing infinite loop
+	
+c. destruction phase
+	1. componentWillUnmount()
+	DO: clear resources, unsubscribe promises, observers or file objects etc.
+d. error phase
+	1. static getDerivedStateFromError()
+	2. componentDidCatch()
