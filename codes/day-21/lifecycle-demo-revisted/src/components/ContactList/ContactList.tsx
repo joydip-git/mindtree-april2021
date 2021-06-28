@@ -2,6 +2,7 @@ import { Component } from "react";
 import { Contact } from "../../models/Contact";
 import { PromiseReponse } from "../../models/PromiseReponse";
 import contactSvcObject from "../../services/ContactService";
+import Child from "../Child/Child";
 import ContactDetail from "../ContactDetail/ContactDetail";
 import ContactUpdate from "../ContactUpdate/ContactUpdate"
 
@@ -51,6 +52,9 @@ class ContactList extends Component<{}, ContactListStateType> {
                     selectedPhoneNo !== 0 &&
                     <ContactUpdate selectedContactPhone={selectedPhoneNo} />
                 }
+                <br />
+                <br />
+                <Child contactArray={contacts} />
             </div>
         )
     }

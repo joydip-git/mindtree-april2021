@@ -11,20 +11,5 @@ export const contactRecords: Contact[] = [{
     name: 'mahesh',
     email: 'mahesh@gmail.com',
     phone: 9090909092
-}, {
-    name: 'mahesh',
-    email: 'mahesh@gmail.com',
-    phone: 9090909092
-}, {
-    name: 'mahesh',
-    email: 'mahesh@gmail.com',
-    phone: 9090909092
-}, {
-    name: 'mahesh',
-    email: 'mahesh@gmail.com',
-    phone: 9090909092
-}, {
-    name: 'mahesh',
-    email: 'mahesh@gmail.com',
-    phone: 9090909092
-}]
+}
+]
