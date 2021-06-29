@@ -24,6 +24,8 @@ if(this.props.contactInfo !== newProps.contactInfo){}
 
 HOC:
 design pattern
+avoid Mixin and use HOC
+HOC helps to inject additional reusable functionalities in any component, since JS/TS allows single inheritance
 
 const utility={
 	sayHi

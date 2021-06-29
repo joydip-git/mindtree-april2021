@@ -1,37 +1,25 @@
-import React, { Component } from 'react';
 import './App.css';
+import withShow from './withShow';
 
-let Sample: any = function (props: any) {
-    console.log(props);
-    return (
-        <div className="App">
-            HOC App
-            {
-                props.showFn()
-            }
-            <br />
-            Value:&nbsp;
-            {
-                props.value ? props.value : 'NA'
-            }
-        </div>
-    );
+const Sample = function (props: any) {
+  console.log(props);
+  return (
+    <div className="App">
+      HOC App
+      {
+        props.showFn()
+      }
+      <br />
+      Value:&nbsp;
+      {
+        props.value ? props.value : 0
+      }
+    </div>
+  );
 }
-
-const withShow = (OriginalComponent: any) => {
-    class WithShow extends Component {
-        show() {
-            console.log('hello');
-        }
-        render() {
-            console.log(this.props);
-            return <OriginalComponent showFn={this.show} {...this.props} />
-        }
-    }
-    return WithShow;
-}
-Sample = withShow(Sample)
-export default Sample
+// Sample = withShow(Sample)
+// export default Sample
+export default withShow(Sample)
 
 /**
  * const memorize = (OriginalComponent: any) => {

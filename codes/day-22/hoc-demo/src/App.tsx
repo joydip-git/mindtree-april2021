@@ -1,16 +1,18 @@
 import './App.css';
-import Child from './Child';
+import ClsComp from './ClsComp';
+import Parent from './Parent';
 import Sample from './Sample';
 
 const App = function () {
-  // let childCompObj = new Child({})
-  // childCompObj.show()
   return (
     <div className="App">
       <Sample value={10} />
       <br />
       <br />
-      <Child />
+      <ClsComp name='Joydip' />
+      <br />
+      <br />
+      <Parent />
     </div>
   );
 }
