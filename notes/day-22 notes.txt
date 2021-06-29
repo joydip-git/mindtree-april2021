@@ -1,0 +1,38 @@
+shallow
+value type values
+ref type values
+
+boolean, string, number...
+if (this.props.isVisiable !== newProps.isVisiable)
+         return true
+else
+        return false
+
+deep comparison
+{
+	name:
+	email:
+	phone:
+}
+if (this.props.contactInfo.name !== newProps.contactInfo.name || this.props.contactInfo.email !== newProps.contactInfo.email || this.props.contactInfo.phone !== newProps.contactInfo.phone)
+         return true
+else
+        return false
+
+if(this.props.contactInfo !== newProps.contactInfo){}
+
+
+HOC:
+design pattern
+
+const utility={
+	sayHi
+}
+class A extends Component{
+
+}
+
+
+
+
+

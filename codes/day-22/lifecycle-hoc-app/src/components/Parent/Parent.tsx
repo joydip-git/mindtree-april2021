@@ -16,6 +16,7 @@ class Parent extends Component<{}, ParentStateType> {
         data: 0
     }
     updateNameHandler = (newName: string) => {
+        //this.state.name = newName;
         this.setState({
             name: newName
         })
