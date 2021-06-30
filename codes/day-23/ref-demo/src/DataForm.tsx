@@ -20,7 +20,9 @@ export default class DataForm extends Component {
         // if (this.inputRef) {
         //     this.inputRef.focus()
         // }
+
         //this.inputRef?.focus()
+        this.inputElementRef.current?.focus()
     }
 
     validate = (ev: any) => {
@@ -41,7 +43,7 @@ export default class DataForm extends Component {
     componentDidMount() {
         console.log(this.inputElementRef);
         console.log(this.inputElementRef.current);
-        this.inputElementRef.current?.focus()
+        this.putFocus()
         console.log('Form mounted');
     }
 }
