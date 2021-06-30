@@ -1,0 +1,63 @@
+1. Ref
+
+function App(props:any){
+	//data and functions
+	const data = 10;
+	const call=()=>{console.log('hello')}
+
+	//this function of the component wants to access one of the React Element from the design
+	const validate=(eventObj)=>{
+	}
+
+	//design(We are accessing data and functions of the component)
+	return (<p onClick={call}>{data}<input type='text' value='' onChange={validate}></p>
+}
+
+class App extends Component{
+	//data and functions
+	state={
+		data:10
+	}
+	call=()=>{console.log('hello')}
+
+	//this function of the component wants to access one of the React Element from the design
+	validate=(eventObj)=>{
+	}
+
+	//design (We are accessing data and functions of the component)	
+	render(){
+		return <p id='p1' style={{color:'blue'}} onClick={this.call}>{this.state.data}<input type='text' value='' onChange={this.validate}></p>
+	}
+}
+
+question: how to access React Elements from the methods/functions (outside the design)?
+answer: ref => 
+	a. like 'type', 'key', 'props', react elements do have a property (built-in) known as 'ref'
+	b. this property generally holds reference to the HTML element in the Actual DOM
+	c. two techniques to retrieve the reference stored in 'ref':
+		1. use callback ref
+		2. use createRef() method from react library
+{
+   type:'p',
+   key:null,
+   ref:null,
+   props:{
+     p1:<>,
+     id:'p1',
+     style:{color:'blue'},
+     children:[
+	10,
+	{
+	 type:'input',
+	 key:null,
+         ref:null,
+	 props:{
+           type:'text',
+	   value:'',
+           onChange:Funtion[this.validate]
+	 }
+	}
+	]
+   }
+}
+
