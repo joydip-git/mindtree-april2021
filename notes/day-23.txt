@@ -1,4 +1,8 @@
 1. Ref
+	a. to HTML element
+	b. to component
+		i. class component
+		ii. functional component
 
 function App(props:any){
 	//data and functions
