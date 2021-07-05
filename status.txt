@@ -1,16 +1,16 @@
 status:
-deepthi: 30 completed
-dipankar: 23
-priya: refs (30)
-kashyap: fragments
-mounika: 26
-kushal: 25
-kiran: 27
-madhu:27
-mohan: 25
-hari: 27
-lakshmi: 21
-raja: 16
-saad: fragments (25)
-shubham: 27
-spandana: 26
+deepthi: upto hooks - useState
+dipankar: upto introduction of hooks
+priya: upto useState hook
+kashyap: http request
+mounika: http request
+kushal: http request
+kiran: http requests
+madhu:http requests
+mohan: upto useState hook
+hari: http requests
+lakshmi: upto HOC
+raja: upto 26th Video
+saad: upto useState hook
+shubham: upto useState hook (2 videos)
+spandana: http request

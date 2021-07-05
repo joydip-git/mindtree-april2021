@@ -1,0 +1,44 @@
+HTTP Request
+
+REST: Representational State Transfer
+API: Application Programming interface (functionalities)
+
+HTTP METHODS	URL	              		RESTful Api Request parameter             Response
+-----------------------------------------------------------------------------------------------
+GET	http://localhost:3001/contacts		get() 	   NA		                data (contacts 											array)
+GET	http://localhost:3001/contacts/{id}	get(id)	   id value[route data]         data (a contact 											object)
+POST	http://localhost:3001/contacts		post()	   a contact object (via body)  success/failure 											resp
+PUT	http://localhost:3001/contacts/{id}	put()	   id(route data) and 
+							   updated contact object(body) success/failure 												resp
+DELETE	http://localhost:3001/contacts/{id}	delete(id) id value[route data]		success/failure 											resp
+
+an application - RESTful API: [JSON-SERVER]
+	host data
+	other appp can make request for the data, manipulate the data (add, update, delete) etc.
+	requests will be via HTTP
+	share the data in JSON or XML format or any other format
+	generally will be hosted/deployed in some machine (server)
+
+the app hosting data and the app requesting data are loosely coupled: the client (anagular/react/vue etc.) and the data server app(the app hosting the data) they just interact via HTTP request and uses an agreed format of data (JSON/XML)
+
+client app (angular/react etc.):
+a. direct raw Ajax or need some api to make asynmchronous request (HTTP) and the URL of the host of the data
+	fetch (browser API), axios (third party package)
+b. response expected might take some time to be retrieved
+c. the request must be asynchronous and you must have facility of updating the UI after response has been received
+
+state of data: attriburtes + values (of the attributes) about an object
+{
+            "id": 3,
+            "name": "mahesh",
+            "email": "mahesh@gmail.com",
+            "phone": 9090909092
+},
+{
+            "id": 4,
+            "name": "banu prakash",
+            "email": "banu@gmail.com",
+            "phone": 9090909093
+}
+
+CSV: 3,"mahesh","mahesh@gmail.com",9090909092
