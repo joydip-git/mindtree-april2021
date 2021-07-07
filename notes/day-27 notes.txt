@@ -1,0 +1,32 @@
+App	
+	DashBoard (nested)
+
+Home						localhost:3000 or localhost:3000/home
+
+Products module:				
+	[RoutedComponent]
+	ProductList:				localhost:3000/products
+		[Nested Components]
+		ProductRow (nested)
+		ProductFilter(nested)
+		ProductSort(nested)
+
+	[RoutedComponents]
+	AddProduct				localhost:3000/products/add
+	UpdateProduct				localhost:3000/products/update/{id}
+	ViewProduct				localhost:3000/products/view/{id}
+
+PageNotFound					any other URL apart from the above mentioned
+
+react-router
+react-router-dom
+
+type of routers:
+1. browser router
+2. hash router
+3. memory router
+
+
+
+
+	

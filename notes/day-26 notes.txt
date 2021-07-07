@@ -42,3 +42,13 @@ state of data: attriburtes + values (of the attributes) about an object
 }
 
 CSV: 3,"mahesh","mahesh@gmail.com",9090909092
+
+why hooks? (using hooks)
+1. state in React class component (must always be an object)
+2. lifecycle methods
+3. this
+
+state={x:0}
+
+useful APIs (functionalities)
+useState, useEffect, useMemo, useRef, useCallback, useReducer......

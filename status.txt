@@ -1,16 +1,16 @@
 status:
-deepthi: upto hooks - useState
-dipankar: upto introduction of hooks
-priya: upto useState hook
-kashyap: http request
-mounika: http request
+deepthi: upto hooks - useState completed
+dipankar: upto useState
+priya: completed hooks
+kashyap: useState hook
+mounika: useState hook
 kushal: http request
-kiran: http requests
-madhu:http requests
+kiran: useState
+madhu:useState
 mohan: upto useState hook
-hari: http requests
-lakshmi: upto HOC
-raja: upto 26th Video
-saad: upto useState hook
-shubham: upto useState hook (2 videos)
-spandana: http request
+hari: useState Hook
+lakshmi: upto Http Requests
+raja: upto 30th Video
+saad: useEffect
+shubham: useEffect
+spandana: useState
