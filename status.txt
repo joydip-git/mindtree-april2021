@@ -1,16 +1,16 @@
 status:
 deepthi: hooks and router
-dipankar: upto useState
-priya: completed hooks
-kashyap: useState hook
-mounika: useState hook
-kushal: http request
-kiran: useState
-madhu:useState
+dipankar: useEffect
+priya: routing
+kashyap: useEffect+routing
+mounika: hooks completed
+kushal: routing and hooks going on
+kiran: hooks
+madhu:hooks
 mohan: upto useState hook
-hari: useState Hook
-lakshmi: upto Http Requests
+hari: watching hook
+lakshmi: hooks
 raja: upto 30th Video
-saad: useEffect
+saad: routing
 shubham: useEffect
 spandana: useState
