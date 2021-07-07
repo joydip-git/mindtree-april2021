@@ -1,5 +1,5 @@
 status:
-deepthi: upto hooks - useState completed
+deepthi: hooks and router
 dipankar: upto useState
 priya: completed hooks
 kashyap: useState hook
