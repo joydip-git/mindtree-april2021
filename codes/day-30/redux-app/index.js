@@ -23,7 +23,7 @@ let updateNameActionObj = updateNameActionCreator('sunil')
 store.dispatch(updateNameActionObj)
 console.log(store.getState())
 
-const getData = (dispatchFnRef) => {
+const getDataUsingThunk = (dispatchFnRef) => {
     return function () {
         getContacts()
             .then(
@@ -39,6 +39,22 @@ const getData = (dispatchFnRef) => {
             )
     }
 }
-const callbackToGetData = getData(store.dispatch)
+const callbackToGetData = getDataUsingThunk(store.dispatch)
 store.dispatch(callbackToGetData)
+
+const getDataYourself = (dispatchFnRef) => {
+    getContacts()
+        .then(
+            (dataResp) => {
+                //console.log(dataResp.data)
+                const dataAction = getContactsSuccessActionCreator(dataResp.data)
+                dispatchFnRef(dataAction)
+            },
+            (errorResp) => {
+                const errorAction = getContactsFailureActionCreator(errorResp.message)
+                dispatchFnRef(errorAction)
+            }
+        )
+}
+getDataYourself(store.dispatch)
 //console.log(store.getState())
