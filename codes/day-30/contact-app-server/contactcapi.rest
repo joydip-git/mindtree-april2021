@@ -1,0 +1,30 @@
+###
+GET http://localhost:3001/contacts
+
+###
+GET http://localhost:3001/contacts/3
+
+###
+POST http://localhost:3001/contacts
+Content-Type: application/json
+
+{
+            "id": 4,
+            "name": "banu prakash",
+            "email": "banu@gmail.com",
+            "phone": 9090909093
+}
+
+###
+PUT http://localhost:3001/contacts
+Content-Type: application/json
+
+{
+            "id": 3,
+            "name": "ramnath",
+            "email": "ramnath@gmail.com",
+            "phone": 9090909093
+}
+
+###
+DELETE  http://localhost:3001/contacts/4

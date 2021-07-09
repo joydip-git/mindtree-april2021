@@ -1,12 +1,16 @@
 const { createStore, combineReducers } = require('redux')
-const { nameStateReducer, numberStateReducer } = require('./reducers')
+const { createLogger } = require('redux-logger')
+const { nameStateReducer, numberStateReducer, contactStateReducer } = require('./reducers')
 
 //5. creating a redux store by first merging the reducers
 const rootReducer = combineReducers({
     nameStateRef: nameStateReducer,
-    numberStateRef: numberStateReducer
+    numberStateRef: numberStateReducer,
+    contactStateRef: contactStateReducer
 })
-const store = createStore(rootReducer)
+
+const loggerMiddleware = createLogger()
+const store = createStore(rootReducer, loggerMiddleware.default)
 module.exports = {
     store
 }

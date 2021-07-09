@@ -5,7 +5,12 @@ const numberState = {
 const nameState = {
     name: 'anil'
 }
+const contactState = {
+    contacts: [],
+    errorMessage: ''
+}
 module.exports = {
     numberState,
-    nameState
+    nameState,
+    contactState
 }

@@ -21,8 +21,24 @@ const updateNameActionCreator = (newName) => {
     }
 }
 
+const getContactsSuccessActionCreator = (contacts) => {
+    return {
+        type: actionTypes.GET_CONTACTS_SUCCESS_ACTION,
+        data: contacts
+    }
+}
+
+const getContactsFailureActionCreator = (errMessage) => {
+    return {
+        type: actionTypes.GET_CONTACTS_FAILURE_ACTION,
+        data: errMessage
+    }
+}
+
 module.exports = {
     increaseValueActionCreator,
     decreaseValueActionCreator,
-    updateNameActionCreator
+    updateNameActionCreator,
+    getContactsSuccessActionCreator,
+    getContactsFailureActionCreator
 }
