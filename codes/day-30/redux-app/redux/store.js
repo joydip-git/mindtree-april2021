@@ -1,7 +1,12 @@
-const { createStore } = require('redux')
-const { dataStateReducer } = require('./reducers')
-//5. creating a redux store
-const store = createStore(dataStateReducer)
+const { createStore, combineReducers } = require('redux')
+const { nameStateReducer, numberStateReducer } = require('./reducers')
+
+//5. creating a redux store by first merging the reducers
+const rootReducer = combineReducers({
+    nameStateRef: nameStateReducer,
+    numberStateRef: numberStateReducer
+})
+const store = createStore(rootReducer)
 module.exports = {
     store
 }
