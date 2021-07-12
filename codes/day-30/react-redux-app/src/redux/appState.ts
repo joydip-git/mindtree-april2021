@@ -8,3 +8,7 @@ export const allConcatsState = {
     contacts: [],
     errorMessage: ''
 }
+export const contactDetailState = {
+    contact: null,
+    errorMessage: ''
+}

@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react'
-import { getContactsFailureActionCreator, getContactsSuccessActionCreator } from '../redux/actionCreators';
-import { ContactService } from '../services/ContactService';
+// import { getContactsFailureActionCreator, getContactsSuccessActionCreator } from '../redux/actionCreators';
+// import { ContactService } from '../services/ContactService';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
+import { getContactRecords } from '../redux/asyncCallbacks';
 
 const ContactList = (props: any) => {
     // useEffect(
@@ -29,19 +31,20 @@ const ContactList = (props: any) => {
     // )
     useEffect(
         () => {
+            props.setData()
             //console.log('component mounted');
-            ContactService.Create()
-                .getContacts()
-                .then(
-                    (dataResp) => {
-                        if (dataResp.data) {
-                            props.setData(dataResp.data)
-                        }
-                    },
-                    (errResp) => {
-                        props.setError(errResp.message)
-                    }
-                )
+            // ContactService.Create()
+            //     .getContacts()
+            //     .then(
+            //         (dataResp) => {
+            //             if (dataResp.data) {
+            //                 props.setData(dataResp.data)
+            //             }
+            //         },
+            //         (errResp) => {
+            //             props.setError(errResp.message)
+            //         }
+            //     )
             return () => {
                 console.log('component unmounted');
             }
@@ -64,7 +67,9 @@ const ContactList = (props: any) => {
                 (
                     props.contactRecords.map((c: any) => {
                         return <li key={c.id}>
-                            {c.name}
+                            <Link to={`/contacts/view/${c.id}`}>
+                                <u> {c.name}</u>
+                            </Link>
                         </li>
                     })
                 )
@@ -83,13 +88,17 @@ const mapStateToPropsCallback = (combinedStateRef: any) => {
 
 const mapDispatchToPropsCallback = (dispatchFnRef: any) => {
     const mapDispatchToPropsConfig = {
-        setData: (contactsData: any) => {
-            let sucessAction = getContactsSuccessActionCreator(contactsData)
-            dispatchFnRef(sucessAction)
-        },
-        setError: (errorData: any) => {
-            let failAction = getContactsFailureActionCreator(errorData)
-            dispatchFnRef(failAction)
+        // setData: (contactsData: any) => {
+        //     let sucessAction = getContactsSuccessActionCreator(contactsData)
+        //     dispatchFnRef(sucessAction)
+        // },
+        // setError: (errorData: any) => {
+        //     let failAction = getContactsFailureActionCreator(errorData)
+        //     dispatchFnRef(failAction)
+        // }
+        setData: () => {
+            let callback = getContactRecords()
+            dispatchFnRef(callback)
         }
     }
     return mapDispatchToPropsConfig

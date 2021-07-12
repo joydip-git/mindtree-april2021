@@ -34,3 +34,17 @@ export const getContactsFailureActionCreator = (errMessage: any) => {
         data: errMessage
     }
 }
+
+export const getContactDetailSuccessActionCreator = (contactObj: any) => {
+    return {
+        type: actionTypes.GET_CONTACT_SUCCESS_ACTION,
+        data: contactObj
+    }
+}
+
+export const getContactDetailFailureActionCreator = (errMessage: any) => {
+    return {
+        type: actionTypes.GET_CONTACT_FAILURE_ACTION,
+        data: errMessage
+    }
+}

@@ -16,7 +16,7 @@ export class ContactService {
         console.log('called')
         return axiosInstance.get('')
     }
-    public getContactByPhone(id: number) {
+    public getContactById(id: number) {
         return axiosInstance.get(`${id}`)
     }
     public addContact(contactObj: any) {
