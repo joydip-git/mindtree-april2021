@@ -1,11 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { createLogger } from "redux-logger";
 import thunkMiddleware from 'redux-thunk'
-import { nameStateReducer, numberStateReducer } from './reducers'
+import { nameStateReducer, numberStateReducer, allContactsStateReducer } from './reducers'
 
 const rootReducer = combineReducers({
     nameStateRef: nameStateReducer,
-    numberStateRef: numberStateReducer
+    numberStateRef: numberStateReducer,
+    allContactsStateRef: allContactsStateReducer
 })
 
 const loggerMiddleware = createLogger()

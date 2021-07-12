@@ -20,3 +20,17 @@ export const updateNameActionCreator = (newName: string) => {
         data: newName
     }
 }
+
+export const getContactsSuccessActionCreator = (contacts: any) => {
+    return {
+        type: actionTypes.GET_CONTACTS_SUCCESS_ACTION,
+        data: contacts
+    }
+}
+
+export const getContactsFailureActionCreator = (errMessage: any) => {
+    return {
+        type: actionTypes.GET_CONTACTS_FAILURE_ACTION,
+        data: errMessage
+    }
+}

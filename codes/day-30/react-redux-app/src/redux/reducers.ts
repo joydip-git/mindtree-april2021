@@ -1,5 +1,5 @@
 import * as actionTypes from './actionTypes'
-import { nameState, numberState } from './appState'
+import { nameState, numberState, allConcatsState } from './appState'
 
 export const numberStateReducer = (prevStateObj = numberState, actionObj: any) => {
     let newState = null;
@@ -44,4 +44,32 @@ export const nameStateReducer = (prevStateObj = nameState, actionObj: any) => {
             break;
     }
     return newState;
+}
+
+export const allContactsStateReducer = (prevState = allConcatsState, actionObj: any) => {
+    let newState = null;
+    switch (actionObj.type) {
+        case actionTypes.GET_CONTACTS_SUCCESS_ACTION:
+            newState = {
+                ...prevState,
+                contacts: actionObj.data,
+                errorMessage: ''
+            }
+            break;
+
+        case actionTypes.GET_CONTACTS_FAILURE_ACTION:
+            newState = {
+                ...prevState,
+                contacts: [],
+                errorMessage: actionObj.data
+            }
+            break;
+
+        default:
+            newState = {
+                ...prevState
+            }
+            break;
+    }
+    return newState
 }

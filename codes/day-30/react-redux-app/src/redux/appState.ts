@@ -4,3 +4,7 @@ export const numberState = {
 export const nameState = {
     name: 'anil'
 }
+export const allConcatsState = {
+    contacts: [],
+    errorMessage: ''
+}
