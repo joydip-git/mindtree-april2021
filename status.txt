@@ -1,16 +1,16 @@
 status:
-deepthi: hooks and router
-dipankar: useEffect
-priya: routing
-kashyap: useEffect+routing
-mounika: hooks completed
-kushal: routing and hooks going on
-kiran: hooks
-madhu:hooks
-mohan: upto useState hook
-hari: watching hook
-lakshmi: hooks
-raja: upto 30th Video
-saad: routing
-shubham: useEffect
-spandana: useState
+deepthi: assignmentrs 22 & 23 going
+dipankar: assignments 22 going on
+priya: redux assignemnst and learning
+kashyap: assignments 23 (hook) and assignments 22 (hook)
+mounika: assignments 23 (formik+hook)
+kushal: router hook (assignment 23)
+kiran: redux to start
+madhu:learning routing (assignment:23)
+mohan: assignment 23 part-1 done (formik going on)
+hari: assignment 22 starting
+lakshmi: 22 and 23 parallel
+raja: a-22 going on (hook learning)
+saad: route with formik almost done
+shubham: routing assignment (part-2) going on
+spandana: a-22 with hook going
