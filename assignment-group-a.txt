@@ -26,3 +26,12 @@ e. along with "confirm" button
 6. Nallangu Lakshmi Sailaja
 7. Deepthi J
 8. Spandana A Kashyap
+
+name of the apps:
+library-management-system-<campus-mind-name>:
+	library-management-system-client (react)
+	library-management-system-server (backend server)
+
+library-management-system-<campus-mind-name>:
+	library-management-system-client (react)
+	library-management-system-server (backend server)
