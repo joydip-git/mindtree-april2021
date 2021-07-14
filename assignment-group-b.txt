@@ -1,0 +1,25 @@
+flight-management-system-<campus-mind-name>:
+	flight-system-client (react)
+	flight-system-server (backend server)
+
+
+1. Sai Priya Duddella
+2. Shubham Agrawal
+3. Gokada Mohan Subrahmanya Anjaneya Katamraju
+4. Saad Razzak
+5. Kiran Kumar Madatha
+6. kovi Saimounika
+7. Kashyap Sai Prasad Nadendla
+
+flight management system:
+1. show list of flights: (min 2)
+flight data: id, name, start place, end place, start time, end time
+
+2. click on any flight name/select button should show list of passengers: (min 3)
+passenger dara: id, name, dob [NA/value], passport [NA/value], address [NA/value], travelling with infant, needs wheelchair, seat number
+
+3. passenger list of a flight should be filtered based on missing mandatory requirements: passport, dob, address
+4. add passenger facility: place a add passenger button at the top of the passenger list. 
+fields: name, dob[optional], passport[optional], address[optional], travelling with infant[yes/no], needs wheelchair[yes/no], seat no (should be selected from list of available seats)
+5. click on the "Add" button to add the passenger details in the file and be redirected to the list of passengers view of that flight
+6. if anyone wants to return to the flights view, then a back button should be present on the passenger list view
