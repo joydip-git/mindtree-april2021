@@ -1,0 +1,28 @@
+library management system:
+1. show list of books through a table. 
+2. last column should have "issue" button
+book data: name, id (4 digit), author, price, publication
+
+3. click on "issue" button in a row-->
+list of user details displayed through a table:
+user data: name, email, contact no, id
+last column should be "issue to"
+
+4. click on the "issue" to
+the form with following fields should be displayed: (all readonly text boxes/labels)
+a. name of the user, 
+b. name of the book, 
+c. issue date, 
+d. return date (+7) 
+e. along with "confirm" button
+
+5. message appears "book <book-name> issued to <user-name>" and data is saved in the database when confirm button is clicked
+
+1. Rajaseshan Kuhaluri
+2. Madhu Sudhan C
+3. Dipankar Mahato
+4. Kushal Baragi
+5. Hari Babu Mulugu
+6. Nallangu Lakshmi Sailaja
+7. Deepthi J
+8. Spandana A Kashyap

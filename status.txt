@@ -1,11 +1,11 @@
 status:
-deepthi: assignmentrs 22 & 23 going
+deepthi: assignments 22 & 23 going
 dipankar: assignments 22 going on
-priya: redux assignemnst and learning
+priya: redux assignemts and learning
 kashyap: assignments 23 (hook) and assignments 22 (hook)
 mounika: assignments 23 (formik+hook)
 kushal: router hook (assignment 23)
-kiran: redux to start
+kiran: redux to started
 madhu:learning routing (assignment:23)
 mohan: assignment 23 part-1 done (formik going on)
 hari: assignment 22 starting
