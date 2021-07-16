@@ -1,4 +1,6 @@
 import React from 'react'
+import { errorLogger } from './errorLogger';
+import withErrorBoundary from './withErrorBoundary';
 
 type HeroPropType = {
     heroName: string
@@ -21,7 +23,7 @@ type HeroPropType = {
 //     return design
 // }
 
-//v2:
+//v2 & v3:
 const Hero = (props: HeroPropType) => {
     let { heroName: nameOfHero } = props
     let design = null;
@@ -35,4 +37,8 @@ const Hero = (props: HeroPropType) => {
     //let nameOfHero = props.heroName
     return design
 }
-export default Hero
+//v2:
+//export default Hero
+
+//v3:
+export default withErrorBoundary(Hero, errorLogger)

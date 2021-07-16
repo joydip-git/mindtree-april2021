@@ -7,13 +7,25 @@ function App() {
   return (
     <div className="App">
       <br />
-      <ErrorBoundary errorHandler={errorLogger}>
+      {
+        <span>Hello</span>
+      }
+      <br />
+      {/**v2: */}
+      {/* <ErrorBoundary errorHandler={errorLogger}>
         <Hero heroName='Batman' />
         <br />
         <Hero heroName='Superman' />
         <br />
         <Hero heroName='Joker' />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
+
+      {/**v3: */}
+      <Hero heroName='Batman' />
+      <br />
+      <Hero heroName='Superman' />
+      <br />
+      <Hero heroName='Joker' />
     </div>
   );
 }

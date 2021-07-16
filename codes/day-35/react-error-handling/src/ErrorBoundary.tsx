@@ -36,7 +36,11 @@ export default class ErrorBoundary extends Component<ErrorBoundaryPropType, Erro
     componentDidCatch(error: any, info: any) {
         console.log('[EB] caught error');
         console.log(info);
-        this.props.errorHandler({ loggedTime: new Date().toLocaleDateString(), errorMessage: error.message, errorStack: info.componentStack })
+        this.props.errorHandler(
+            {
+                loggedTime: new Date().toLocaleDateString(), errorMessage: error.message,
+                errorStack: info.componentStack
+            })
         // this.setState({
         //     errorMessage: error.message
         // })
