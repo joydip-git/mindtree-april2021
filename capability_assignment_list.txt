@@ -1,0 +1,23 @@
+Skill	Capability
+----------------------------------------------------------
+React	Creating asynchronous and event-based programs
+React	Develop complex applications using formik or redux-forms 
+Design Patterns	Organize your code
+React	Use Redux for state management of React application
+React	Understand advanced React concepts and when to use the same
+RWD	Develop responsive pages using any of UI framework eg: Material UI / Prime React 
+RTL	Implement Sass for responsive design and RTL
+PWA	Implement the concept of progressive web apps.
+ESLint	Use ESLint to ensure the code is in production ready state
+
+
+1. Assignment_WebTech_MERNStack_WEB022_ReactJS[Creating asynchronous and event-based programs]
+2. Assignment_WebTech_MERNStack_WEB023_ReactJS[Develop complex applications using formik or redux-forms]
+3. Assignment_WebTech_MERNStack_WEB010_ReactJS [Organize your code]
+4. Assignment_WebTech_MERNStack_WEB028_ReactJS[Use Redux for state management of React application]
+5. Assignment_WebTech_MERNStack_WEB029_ReactJS[Understand advanced React concepts and when to use the same]
+6. Assignment_WebTech_MERNStack_WEB021_ReactJS[Develop responsive pages using any of UI framework eg: Material UI / Prime React]
+7. Assignment_WebTech_MERNStack_WEB007_ReactJS[Implement Sass for responsive design and RTL]
+8. Assignment_WebTech_MERNStack_WEB030_ReactJS[Implement the concept of progressive web apps]
+9. Assignment_WebTech_MERNStack_WEB027_ReactJS[Use ESLint to ensure the code is in production ready state]
+
