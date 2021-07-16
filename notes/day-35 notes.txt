@@ -1,0 +1,35 @@
+Error Handling:
+1. try...catch...finally
+2. Error Boundary (technique/pattern)
+3. HOC
+
+<Hello />
+
+
+
+	react-dom-runtime
+	parent component
+	child component
+
+
+   try {   
+	//code     
+        if (condition) {
+            let errorObj= new Error('Error has occurred')
+            throw errorObj
+        }
+    }
+    catch (err) {
+        design = <span>Error</span>
+    }
+
+
+
+
+"
+    at Hero (http://localhost:3000/static/js/main.chunk.js:482:15)
+    at ErrorBoundary (http://localhost:3000/static/js/main.chunk.js:317:5)
+    at div
+    at App"
+
+	
