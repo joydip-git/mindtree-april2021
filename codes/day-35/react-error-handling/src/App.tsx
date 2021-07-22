@@ -1,9 +1,11 @@
+import React from 'react';
+import { ReactElement } from 'react';
 import './App.css';
-import ErrorBoundary from './ErrorBoundary';
-import { errorLogger } from './errorLogger';
+// import ErrorBoundary from './ErrorBoundary';
+// import { errorLogger } from './errorLogger';
 import Hero from './Hero';
 
-function App() {
+function App(): ReactElement {
   return (
     <div className="App">
       <br />

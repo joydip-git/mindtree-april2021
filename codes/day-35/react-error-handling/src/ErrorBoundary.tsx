@@ -11,7 +11,7 @@ export default class ErrorBoundary extends Component<ErrorBoundaryPropType, Erro
         errorMessage: ''
     }
     //set the state with error message early in the life cycle
-    static getDerivedStateFromError(error: any) {
+    static getDerivedStateFromError(error: any): ErrorBoundaryStateType {
         console.log(typeof error);
         console.log('[EB] getDerivedStateFromError');
         //return a new state with error message
@@ -22,7 +22,7 @@ export default class ErrorBoundary extends Component<ErrorBoundaryPropType, Erro
     render() {
         console.log('[EB] rendered');
         let design: any = null;
-        let { errorMessage: message } = this.state
+        const { errorMessage: message } = this.state
         if (message !== '') {
             console.log(message);
             design = <span>Error occurred</span>

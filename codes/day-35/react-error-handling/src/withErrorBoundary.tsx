@@ -23,7 +23,7 @@ const withErrorBoundary = (
 
         render() {
             let design: any = null;
-            let { errorMessage: message } = this.state
+            const { errorMessage: message } = this.state
             if (message !== '') {
                 console.log(message);
                 design = <span>Error Occurred</span>

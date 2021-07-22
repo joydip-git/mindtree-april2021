@@ -25,12 +25,12 @@ type HeroPropType = {
 
 //v2 & v3:
 const Hero = (props: HeroPropType) => {
-    let { heroName: nameOfHero } = props
+    const { heroName: nameOfHero } = props
     let design = null;
 
     design = <span>{nameOfHero}</span>
     if (nameOfHero === 'Joker') {
-        let heroError = new Error(`${nameOfHero} is not a hero`)
+        const heroError = new Error(`${nameOfHero} is not a hero`)
         throw heroError
     }
 

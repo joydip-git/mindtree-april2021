@@ -1,0 +1,42 @@
+//nested
+function App(){
+ const sayHello=()=>'hello'
+ return (<Sample data={10} dataHandler={sayHello}/>)
+}
+function Sample(props){
+  let {data, sayHello} = props
+  return <span>{props.data}</span>
+}
+
+//routing
+function App(){
+  return (
+	<BrowserRouter>
+		<Route path='/' exact component={Sample}/>
+		<Route path='/sample' exact component={Sample}/>
+	</BrowserRouter>
+	)
+}
+/*
+type SamplePropType={
+	data:number,
+	dataHandler=()=>string
+}
+*/
+type SamplePropType={
+	history:Object,
+	match:Object,
+	location:Object
+}
+class Sample extends Component<SamplePropType,any>{
+	render(){
+		this.props.history/location/match
+	}
+}
+function Sample(props:SamplePropType){
+  console.log(props)
+  let {history, location, match} = props
+  return <span>Hello</span>
+}
+
+http://localhost:3000/Sample

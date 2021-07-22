@@ -1,16 +1,27 @@
 status:
-deepthi: assignments 22 & 23 going
-dipankar: assignments 22 going on
-priya: redux assignemts and learning
-kashyap: assignments 23 (hook) and assignments 22 (hook)
-mounika: assignments 23 (formik+hook)
-kushal: router hook (assignment 23)
-kiran: redux to started
-madhu:learning routing (assignment:23)
-mohan: assignment 23 part-1 done (formik going on)
-hari: assignment 22 starting
-lakshmi: 22 and 23 parallel
-raja: a-22 going on (hook learning)
-saad: route with formik almost done
-shubham: routing assignment (part-2) going on
-spandana: a-22 with hook going
+
+priya: material UI going on (redux completed)
+saad: material UI assignment completed
+
+kiran: redux thunk going on
+kashyap: redux assignment going on
+shubham: redux assignment (28)
+kushal: redux part is going on
+mohan: assignment 28 going on (redux)
+mounika: redux learning
+
+madhu:assignment:22-Hook going on
+spandana: assignment-23 going on
+lakshmi: 22nd assignment completed and 23 going on
+hari: working on assignment 22 (hook version)
+raja: 22nd assignment with hook part is pending
+
+deepthi: assignments 22 completed & 23 going
+dipankar: assignments 22 and coding challenge completed and working in 23rd assignment
+
+
+
+
+
+
+
