@@ -2,6 +2,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import { createLogger } from "redux-logger";
 import thunkMiddleware from 'redux-thunk'
 import { nameStateReducer, numberStateReducer, allContactsStateReducer, contactDetailStateReducer } from './reducers'
+import { composeWithDevTools } from 'redux-devtools-extension'
 
 const rootReducer = combineReducers({
     nameStateRef: nameStateReducer,
@@ -15,5 +16,5 @@ const allMiddleWares = applyMiddleware(loggerMiddleware, thunkMiddleware)
 
 export const appStore = createStore(
     rootReducer,
-    allMiddleWares
+    composeWithDevTools(allMiddleWares)
 )

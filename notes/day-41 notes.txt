@@ -1,0 +1,89 @@
+1. No Sql database
+2. Open source document database
+3. written using C++
+
+database:
+collection === table (contacts, products, deaprtments, employees)
+document === record
+
+{
+  _id: ObjectId()
+  contactid:1,
+  name:'Joydip',
+  emailid:'',
+  phoneNo:9090909090
+  salary:100000,
+  isManager:true,
+  incentive:10000 
+  },
+{
+  _id: ObjectId()
+  contactid:2,
+  name:'Joydip',
+  emailid:'',
+  phoneNo:9090909090
+  salary:100000.45
+  isManager:true
+}
+
+departments: deptid (pk), deptname
+---------------------------------
+1	HR
+2	Training
+
+employees: empid (pk), empname, empsalary, deptid(fk)
+----------------------------------------------------------------
+1	joy	1000	1
+2	anil	2000	2
+3	sunil	3000	1
+
+select * from employees
+select empname, deptname from employees, departments where employees.deptid==departments.deptid
+
+datbase: mindtreedb
+collections: departments, employees
+
+departments:
+{
+	_id: ObjectId()
+	deptid:1,
+	deptname:'HR'
+},
+{
+	_id: ObjectId()
+	deptid:2,
+	deptname:'Training'
+}
+
+employees:
+{
+	_id:ObjectId(),
+	empid:1,
+	empname:'Joy',
+	empsalary:1000,
+	deptid:1,
+},
+{
+	_id:ObjectId(),
+	empid:1,
+	empname:'Joy',
+	empsalary:1000,
+	deptid:2
+}
+
+employees.find()
+employees.findOne({empid:1})
+
+name(varchar), emailid(varchar), phoneNo (bigint), salary: int, isManager:
+---------------------------------------------------------------------------
+joydip		joydip@gmail.com  9090909090(pk)       NULL
+
+
+Mongoddb, graphdb, redis cache, apache casandra, appache, HBase, Google Cloud BigTable etc.
+
+
+
+
+
+
+

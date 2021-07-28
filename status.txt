@@ -1,23 +1,23 @@
 status:
 
-priya: material UI going on (redux completed)
-saad: material UI assignment completed
+priya: going through jest
+saad: going through jest
+kiran: going through jest
 
-kiran: redux thunk going on
-kashyap: redux assignment going on
-shubham: redux assignment (28)
-kushal: redux part is going on
-mohan: assignment 28 going on (redux)
-mounika: redux learning
+kashyap: completed upto RWD
+shubham: RTL going on
+kushal: completed upto singleton
+mohan: uploaded up to PWA
+mounika: uploaded upto PWA
 
-madhu:assignment:22-Hook going on
-spandana: assignment-23 going on
-lakshmi: 22nd assignment completed and 23 going on
-hari: working on assignment 22 (hook version)
-raja: 22nd assignment with hook part is pending
+madhu:upto assignment-10 completed and going through redux
+spandana: upto assignment-10 completed and going through redux
+lakshmi: upto assignment-10 completed and going through redux
+hari: completed upto assignment no: 23-Part1 and going through Part-2
+raja: completed upto assignment no: 23-Part1 and going through Part-2
 
-deepthi: assignments 22 completed & 23 going
-dipankar: assignments 22 and coding challenge completed and working in 23rd assignment
+deepthi: completed upto assignment no: 23-Part1 and learning redux concept
+dipankar: completed upto assignment no: 23-Part1 and learning redux concept
 
 
 
