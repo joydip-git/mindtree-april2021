@@ -1,0 +1,53 @@
+Node JS
+------------------------------------
+1. provides JS runtime environment
+2. Open-source
+3. cross platform
+4. any type of app: web application, web api application, desktop application
+5. server-side framework
+6. runs at the top of V8 JS engine (written using C++)
+7. Node JS is written using C++
+8. very perfomant
+9. Node JS runs in a single process, does not create new thread for every request
+10. it provides you a set of asynchronous I/O functionalities that helps in JS being non-blocking
+
+Usage:
+I/O operations: reading from network, accessing database or the filesystem
+
+Installation:
+	Node JS runtime (node.exe)	
+	Node JS REPL Terminal
+	Node JS command prompt: >node
+	NPM--> Node Package Manager
+	Node JS library
+
+Locations:
+	Node js installed in root-dir/ProgramFiles/nodejs
+	if you install any package globally (npm i <pakcage-name> -g), it will be installed in root-	directory/users/<user-name>/AppData/npm folder
+
+Modules in Node JS:
+Node JS brought the concept of module in JS
+You can create mutiple JS files and then link them internally
+You can use a format to create modules: Common JS format [module.exports to export and require() method to import]
+
+all functionalities of Node JS are segregated into several modules
+such as 'fs' module which contains: readFile, readFileSync, writeFile, wrtiteFileSync etc. functions
+
+products.json:
+[
+  {
+    "productId":,
+    "productName":,
+    "productCode":,
+    "releaseDate":,
+    "description":,
+    "price":,
+    "starRating":,
+    "imageUrl":
+  }
+]
+
+
+
+
+
