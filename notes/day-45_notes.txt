@@ -6,3 +6,25 @@
 6. accepting command line arguments
 
 events system and callbacks (asynchronous)
+
+mongo db
+1. create a db in mongodb named 'productdb'
+2. create a collection named 'products' 
+3. insert those records in collection (products.json)
+4. fetch all products
+5. fetch a single product
+6. delete a product
+7. update a product
+
+node+mongoose:
+1. connect to 'productdb' in mongodb
+2. operations
+	a. fetch all products
+	b. fetch a single product
+	c. insert a product
+	d. delete a product
+	e. update a product
+
+node:
+1. complete the previous assignment 
+2. create a HTTP server which responds with 'hello world' (As HTML) when request is received
