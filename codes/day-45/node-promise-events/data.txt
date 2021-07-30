@@ -1,0 +1,2 @@
+1,dell xps,10000,4,new laptop from dell
+2,iphone 11,12000,5,new iphone from apple
