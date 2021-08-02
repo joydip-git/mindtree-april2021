@@ -1,0 +1,57 @@
+1. RESTful API application with Express JS framework in Node JS
+2. complete end to end a RESTful API application talking to MongoDB using Mongoose
+3. use React JS application to make request to the RESTful API application
+
+
+Http://.../as/getProducts
+Http://.../as/getAirlinesRecord?aid=qwety122
+
+Class AirlineService{
+     public rt getRecords(){}
+     public rt getAirlinesRecord(string id){}
+}
+
+Java: Springboot
+.Net: WCF/ASP.NET MVC Web API
+JS Framework: Node JS + Express JS
+
+HTTP
+Protcol
+Method		URL				    route
+						    /querystring
+						    /body 
+						     data		Service Method	Response
+---------------------------------------------------------------------------------------------------------------------
+GET	http://localhost:3001/contactservice            NA		getContacts	array of contact objects
+GET	http://localhost:3001/contactservice/9090	/phone		getContact(phone)	contact object
+        http://localhost:3001/contactservice?phone=9090
+
+POST	http://localhost:3001/contactservice		{...}		addContact(contact)	response code
+PUT	http://localhost:3001/contactservice		{...}		updateContact(contact)	response code
+DELETE	http://localhost:3001/contactservice/1		/phone		deleteContact(phone)	response code
+	http://localhost:3001/contactservice?phone=9090
+
+using Node JS:
+a. command line based application
+b. simple IO application
+c. simple database application
+d. server application:
+	i. web page application
+	ii. web api application - RESTful application (Express JS)
+
+component-based architecture
+distributed application
+SOA
+microservices
+RESTRful APIs
+
+{
+   "name":"joydip",
+   "email":"abc@gmail.com",
+   "phone":90909090
+}
+	
+
+
+
+

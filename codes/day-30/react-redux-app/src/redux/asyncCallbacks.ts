@@ -7,6 +7,7 @@ export const getContactData = (id: number) => {
             .getContactById(id)
             .then(
                 (dataResp) => {
+                    console.log(dataResp.data)
                     let successAction = getContactDetailSuccessActionCreator(dataResp.data)
                     dispatchRef(successAction)
                 },

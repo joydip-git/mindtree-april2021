@@ -1,0 +1,15 @@
+###
+GET http://localhost:3001/contactservice
+
+###
+GET http://localhost:3001/contactservice/9494949495
+
+###
+PUT http://localhost:3001/contactservice
+Content-Type: application/json
+
+{
+   "name":"joydip",
+   "email":"abc@gmail.com",
+   "phone":9494949494
+}

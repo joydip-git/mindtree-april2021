@@ -66,8 +66,8 @@ const ContactList = (props: any) => {
                 props.contactRecords.length > 0 &&
                 (
                     props.contactRecords.map((c: any) => {
-                        return <li key={c.id}>
-                            <Link to={`/contacts/view/${c.id}`}>
+                        return <li key={c.phone}>
+                            <Link to={`/contacts/view/${c.phone}`}>
                                 <u> {c.name}</u>
                             </Link>
                         </li>
