@@ -14,6 +14,11 @@ const DashBoard = () => {
                     Contacts
                 </button>
             </Link>
+            <Link to='/contacts/add'>
+                <button>
+                    Add Contact
+                </button>
+            </Link>
         </div>
     )
 }

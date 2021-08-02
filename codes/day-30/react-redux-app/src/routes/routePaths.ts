@@ -1,3 +1,4 @@
+import AddContact from "../components/AddContact";
 import ContactDetail from "../components/ContactDetail";
 import ContactList from "../components/ContactList";
 import Home from "../components/Home";
@@ -26,6 +27,11 @@ export const routePaths = [
     },
     {
         routeId: 5,
+        routePath: '/contacts/add',
+        routeComponent: AddContact
+    },
+    {
+        routeId: 6,
         routePath: '*',
         routeComponent: PageNotFound
     }
