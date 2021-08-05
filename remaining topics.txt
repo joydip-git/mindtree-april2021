@@ -1,0 +1,23 @@
+Implementing Design principles and patterns to write a better code
+1. SOLID, DRY and YAGNI
+2. UML class and sequence diagrams
+
+Node JS
+3. Understanding problems hindering performance optimization  
+4. Ability to incorporate till level 2 rules of Richardson Maturity Model in the code
+5. Secure coding  Practices
+6. Ability to use Loopback CLI
+7. Ability to implement HATEOAS
+
+Logging and Tracing
+8. Ability to configure PM2/CloudWatch
+9. Ability to differentiate  between ERROR, WARN, INFO, DEBUG and TRACE and configure them in the program
+
+DDD:
+10. Using Domain Driven Design (DDD) for creating a solution
+11. Ability to map business domain concepts into software artifacts
+12. Guidelines and Best Practices in Restful DDD
+
+Atomic Design:
+1. Understanding the fundamental concepts of Component based architecture (i.e- Atom, Molecule, Organism, Templates and Pages)
+2.  Ability to implement atomic design while developing React/Angular application.
