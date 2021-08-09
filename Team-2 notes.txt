@@ -1,0 +1,13 @@
+product star rating should not be manipulated
+product star rating should be whole number
+product id need not to be displayed, since that is auto generated
+the text for the placeholders should be better
+make the form re-usable
+make the columns sortable, rather than having separate select list
+a confirmation message should appear before deletion, updation and addition
+you can use "loading..." spinner when some operation happenning in the background
+
+productcode can be used for filtering in backend
+
+
+
